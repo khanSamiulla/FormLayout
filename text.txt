@@ -1,0 +1,4 @@
+Up Arrow content: '\25bc';
+Down Arrow content: '\25b2';
+
+Figma Link : https://www.figma.com/file/qOS9nvBAjoOhsPiYWiTCDN/Practical-test---UI-Dev---DeskTop-Screen-(Copy)?type=design&node-id=0-1&mode=design&t=YogJnZq0cposu3WH-0

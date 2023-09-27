@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: poppins-regular;
+    line-height: 24px;
+    background-color: #2183E599;
+}
+
+@font-face {
+    font-family: poppins-black;
+    src: url('/fonts/Poppins-Black.ttf');
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url('/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url('/fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url('/fonts/Poppins-Bold.ttf');
+}
+
+:root {
+    --header-bg: #333333;
+    --white: #FFFFFF;
+    --accorion-gray-fonts: #6C757D;
+    --light-blue-fonts: #2183E5;
+    --progress-green: #00BB28;
+}
+
+.dark-gray-bg {
+    background-color: var(--header-bg);
+}
+
+.navbar-dark .navbar-toggler {
+    border: 1px solid var(--white);
+}
+
+.navbar-nav .nav-item .nav-link,
+.user-name {
+    color: var(--white);
+    font-family: poppins-regular;
+}
+
+.user-name {
+    font-family: poppins-bold;
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.edit-fields {
+    position: relative;
+    margin-right: 25px;
+}
+
+.edit-fields::after {
+    background: url(images/Vector.svg) 50% no-repeat;
+    background-size: contain;
+    content: " ";
+    height: 20px;
+    left: auto;
+    position: absolute;
+    right: -25px;
+    top: 1px;
+    width: 20px;
+    z-index: 10;
+}
+
+.card-link:after {
+    content: "\25b2";
+    font-weight: 900;
+    float: right;
+
+}
+
+.collapsed.card-link:after {
+    content: "\25bc";
+    font-weight: 900;
+    float: right;
+
+}
+
+#accordion .card {
+    margin-bottom: 10px;
+}
+
+#accordion .card .card-header {
+    background-color: #fff;
+}
+
+#accordion .card .card-header a.collapsed.card-link,
+.card-body {
+    color: var(--accorion-gray-fonts);
+}
+
+#accordion .card .card-header a.card-link {
+    color: var(--light-blue-fonts);
+}
+
+.form-personal-details label {
+    color: var(--light-blue-fonts);
+}
+
+.form-personal-details input {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.form-personal-details .form-control.disable-field {
+    background-color: var(--white);
+}
+
+.cta-button {
+    background-color: var(--light-blue-fonts);
+    color: var(--white);
+    font-size: 16px;
+}
+
+.cta-button-white {
+    background-color: var(--white);
+    color: var(--accorion-gray-fonts);
+    font-size: 16px;
+    border: 1px solid var(--accorion-gray-fonts);
+}
+
+.cta-button-white:hover {
+    border: 1px solid var(--light-blue-fonts) !important;
+    color: var(--light-blue-fonts) !important;
+}
+
+.eidtInformation .cta-block {
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.progress-block {
+    width: 100%;
+    height: 16px;
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid var(--light-blue-fonts)
+}
+
+.progress-block .steps-block {
+    height: 5px;
+}
+
+.step-one {
+    width: 20%;
+    background-color: var(--progress-green);
+}
+
+.step-two {
+    width: 40%;
+    background-color: var(--progress-green);
+}
+
+.step-three {
+    width: 60%;
+    background-color: var(--progress-green);
+}
+
+.step-four {
+    width: 80%;
+    background-color: var(--progress-green);
+}
+
+.step-four {
+    width: 100%;
+    background-color: var(--progress-green);
+}
+
+/* .radio-button {
+    width: 17px;
+    height: 17px;
+} */
+
+.last-updated {
+    font-size: 12px;
+}
+
+.light-blue {
+    color: var(--light-blue-fonts)
+}
+
+.skill-list-item {
+    background-color: var(--white);
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: 1px solid var(--accorion-gray-fonts);
+    margin: 16px 16px 16px 0;
+}
+
+.professional-history-heading-block {
+    /* border-top: 1px solid var(--accorion-gray-fonts); */
+    margin-top: 16px;
+    padding-top: 16px;
+}
+
+.three-cta-block {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.organisation-history-details {
+    padding: 0;
+    display: inline-flex;
+    margin-bottom: 0;
+}
+
+.orgnisation-list-item {
+    list-style: none;
+    background-color: var(--white);
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: 1px solid var(--accorion-gray-fonts);
+    margin: 16px 16px 16px 0;
+}
+
+.close-chip {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.close-chip:hover {
+    color: var(--light-blue-fonts);
+}
+
+/* .dot{
+    width: 15px;
+    height: 15px;
+    background-color: var(--accorion-gray-fonts);
+    border: 1px solid var(--header-bg);
+    border-radius: 50%;
+} */
+.dot-section-block {
+    /* box-shadow: 0 15px 25px 15px rgba(0,0,0,0.1); */
+    color: var(--header-bg);
+    border-radius: 10px;
+    margin: 0;
+    padding: 20px 10px;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.dot-main-block {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.dot-main-block:after {
+    content: "";
+    position: absolute;
+    /* left: 0; */
+    left: -25%;
+    top: 19px;
+    background: var(--light-blue-fonts);
+    /* width: 100%; */
+    width: 120%;
+    height: 2px;
+    transform: translate(65%);
+    z-index: -10;
+}
+
+.dot-main-block:last-child:after {
+    content: none;
+}
+
+.dot-list-block {
+    position: relative;
+    flex-direction: column;
+}
+
+.dot-progress-count {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 600;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    color: transparent;
+}
+
+.dot-progress-count:after {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: var(--light-blue-fonts);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -10;
+}
+
+.dot-main-block.step-1.active:after,
+.dot-main-block.step-2.active:after,
+.dot-main-block.step-3.active:after,
+.dot-main-block.step-4.active:after,
+.dot-main-block.step-5.active:after,
+.dot-progress-count.step-1.active:after,
+.dot-progress-count.step-2.active:after,
+.dot-progress-count.step-3.active:after,
+.dot-progress-count.step-4.active:after,
+.dot-progress-count.step-5.active:after {
+    background: green !important;
+}
