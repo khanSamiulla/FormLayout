@@ -5,6 +5,7 @@ $(document).ready(function(){
       $('.disable-field').prop('disabled', false);
       $('#eidt-info').hide();
       $('#update-and-cancel').show();
+      $('.form-row input').css({"border": "1px solid","padding":"0 10px"});
    })
    $('#cancel-edit').on('click', function(){
       $('.disable-field').prop('disabled', true);

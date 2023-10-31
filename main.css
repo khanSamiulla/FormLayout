@@ -233,6 +233,7 @@ body {
     border-radius: 25px;
     border: 1px solid var(--accorion-gray-fonts);
     margin: 16px 16px 16px 0;
+    font-size: 12px;
 }
 
 .close-chip {
@@ -262,7 +263,7 @@ body {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
 
 }
@@ -336,4 +337,17 @@ body {
 .dot-progress-count.step-4.active:after,
 .dot-progress-count.step-5.active:after {
     background: green !important;
+}
+.dot-progress-label{
+    font-size: 12px;
+    line-height: normal;
+}
+
+.form-row label{
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.form-row input{
+    font-size: 12px;
+    padding: 0;
 }
